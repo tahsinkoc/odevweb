@@ -1,0 +1,205 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+	font-family: 'Nunito', sans-serif;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	background-color: #171717;
+}
+.fa-home{
+	left: 0px;
+	position: relative;
+}
+#hou:hover{
+	color: #ffee00;
+}
+#hou{
+	color:  #ffee00;
+}
+.hou:hover{
+	color: #ffee00;
+	transition: 0.5s;
+	transform: scale(1.3);
+}
+.hou{
+	font-size: 25px;
+	color: #00ff77;
+	position: fixed;
+	left: 3%;
+	top: 12%;
+	transition: left 0.5s;
+}
+#top:hover{
+	color: #ffee00;
+}
+#top{
+	color:  #ffee00;
+}
+.top:hover{
+	color: #ffee00;
+	transition: 0.5s;
+	transform: scale(1.3);
+}
+.top{
+	font-size: 25px;
+	color: #00ff77;
+	position: fixed;
+	left: 3.2%;
+	top: 18%;
+	transition: left 0.5s;
+}
+#at{
+	left: 3%;
+	display: inline;
+	position: relative;
+}
+ul li a:hover{
+	position: relative;
+	transition: 0.5s;
+	text-shadow: 0px 0px 2px #ffee00;
+}
+ul li a{
+	padding: 15px;
+	color: #ffee00;
+	font-size: 25px;
+}
+ul li{
+	padding: 30px;
+	margin-top: 10%;
+	text-align: center;
+
+}
+nav{
+	position: relative;
+}
+.content{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: #171717;
+}
+.btnn:hover{
+	transform: scale(1.3);
+	transition: all 0.5s;
+	color: #ffee00;
+}
+.btnn{
+	left: 10%;
+	top: 5%;
+	font-size: 30px;
+	cursor: pointer;
+	color: #ffee00;
+	display: block;
+	transition: left 0.5s;
+	position: absolute;
+}
+.left-nav{
+	width: 30%;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	background: none;
+}
+.l-side{
+	width: 90%;
+	height: 100%;
+	background-color: #262626;
+	left: -100%;
+	padding: 15px;
+	transition: left 0.5s;
+	position: relative;
+	overflow-y: scroll;
+}
+#check{
+	display: none;
+}
+#check:checked~ .top{
+	left: 28%;
+	color: #ffee00;
+	transform: scale(1.3);
+}
+#check:checked~ .hou{
+	left: 27.8%;
+	color: #ffee00;
+	transform: scale(1.3);
+}
+#check:checked~ .btnn{
+	left: 93%;
+	color: #ffee00;
+	transform: scale(1.3);
+}
+#check:checked #hou{
+	color: #ffee00;
+}
+#check:checked~ .l-side{
+	left: 0px;
+}
+#mg4{
+		width:100%;
+		height: 30%;
+	}
+.main{
+	width: 100%;
+	height: 100%;
+}
+@media only screen and (min-width: 600px){
+	ul li a{
+	padding: 15px;
+	color: #ffee00;
+	font-size: 20px;
+	}
+	#mg4{
+		width: 90%;
+		height: 35%;
+	}
+}
+@media only screen and (max-width: 600px){
+	#mg4{
+		width:100%;
+		height: 10%;
+	}
+	#check:checked~ .l-side{
+	left: 0px;
+	width: 150%;
+	}
+	ul li a{
+	padding: 15px;
+	color: #ffee00;
+	font-size: 20px;
+	}
+	#check:checked~ .top{
+	left: 53%;
+	color: #ffee00;
+	transform: scale(1.3);
+	}
+	#check:checked~ .hou{
+	left: 52%;
+	color: #ffee00;
+	transform: scale(1.3);
+	}
+	#check:checked~ .btnn{
+	left: 173%;
+	color: #ffee00;
+	transform: scale(1.3);
+	}
+	#check:checked #hou{
+	color: #ffee00;
+	}
+	#marg{
+		width: 100%;
+		height: 15%;
+	}
+	#mg3{
+		width: 100%;
+		height: 10%;
+	}
+	#mg6{
+		width: 95%;
+	}
+}
